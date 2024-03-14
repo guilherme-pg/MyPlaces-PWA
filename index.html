@@ -12,34 +12,44 @@
 <body>
     <header>
         <div class="header_title">
-            <a href="#landpage">SpeechTranscribe</a>
+            <a href="#section_landpage" id="site_title">SpeechTranscribe</a>
         </div>
         
         <div class="header_menu">
-            <a class="header_button" href="#information">Information</a>
-            <a class="header_button" href="">Saved</a>
-            <a class="header_button" href="">Configurations</a>
+            <a class="header_button" href="#section_information">Information</a>
+            <button class="header_button">Saved</button>
+            <button class="header_button" id="button_config">Configurations</button>
         </div>
     </header>
 
     <main>
-        <section class="main_section_text" id="landpage">
+        <!-- SECTION: LAND/MAIN PAGE -->
+        <section class="main_section_text" id="section_landpage">
             <div class="zone_record_options">
-                <button class="button">Start</button>
-                <button class="button">Pause</button>
+                <button class="button" id="button_start">Start</button>
+                <button class="button" id="button_pause">Pause</button>
                 <!-- <button class="button">Stop</button> -->
-                <button class="button">Restart</button>
+                <!-- <button class="button">Restart</button> -->
                 
             </div>
             <div class="zone_text">
     
             </div>
             <div class="zone_text_resources">
+                <button class="button" id="button_restart">Restart</button>
                 <button class="button">Save</button>
             </div>
         </section>
 
-        <section class="main_section_info" id="information">
+
+        <!-- SECTION: CONFIGURATIONS -->
+        <section class="main_section_config" id="section_config">
+            <p >Ops! We are under maintenance.</p>
+        </section>
+
+
+        <!-- SECTION: INFORMMATION/ ABOUT -->
+        <section class="main_section_info" id="section_information">
             <div class="info_zone">
                 <h2>What is it?</h2>
                 <p>
@@ -53,7 +63,6 @@
                     Whether in business meetings, classes, interviews or in any situation where communication is essential, SpeechTranscribe stands out for its efficiency and practicality. Very useful in moments when it would be difficult to use a keyboard, or pencil and paper; SpeechTranscribe allows you to speed up and save your ideas when you practice your daily walk, while stuck in traffic.
                 </p>
             </div>
-            
         </section>
 
     </main>
@@ -74,5 +83,7 @@
             <p>All rights reserved TM ©</p>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
