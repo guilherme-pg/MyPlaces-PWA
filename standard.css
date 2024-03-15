@@ -14,6 +14,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+section {
+    padding: 60px 0 0 0;
+}
 
 
 
@@ -31,7 +34,6 @@ body {
     padding: 5px 0 5px 0;
     height: 60%;
     width: 20%;
-    margin: 25px 0 25px 0;
 }
 .button:hover {
     background-color: rgb(44, 44, 44);
@@ -108,16 +110,14 @@ header {
     /* background-color: red; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 70px;
     width: 70%;
-    margin: 75px 0px 0px 0px;
 }
 .zone_text {
     background-color: rgb(221, 221, 221);
     width: 75%;
     height: 50vh;
-    margin: 5px;
 }
 .zone_text_resources {
     /* background-color: purple; */
@@ -139,7 +139,7 @@ header {
 
 .main_section_info {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
@@ -149,7 +149,7 @@ header {
     flex-direction: column;
     min-height: 80%;
     width: 35%;
-    margin: 60px 40px 40px 40px;
+    margin: 40px;
 }
 .info_zone h2 {
     margin: 0 0 15px 0;
@@ -214,7 +214,7 @@ footer p {
 }
 
 
-
+/* MEDIUM */
 @media (max-width: 615px) {
     body {
         font-size: 0.75em;
@@ -228,7 +228,7 @@ footer p {
 }
 
 
-
+/* SMALL */
 @media (max-width: 425px) {
     body {
         font-size: 0.75em;
@@ -241,7 +241,6 @@ footer p {
     }
     .zone_record_options {
         width: 85%;
-        margin-top: 50px;
     }
     .zone_text {
         width: 85%;
@@ -261,7 +260,7 @@ footer p {
 }
 
 
-
+/* EXTRA SMALL */
 @media (max-width: 320px) {
     body {
         font-size: 0.75em;
@@ -272,18 +271,27 @@ footer p {
     .header_title {
         margin-left: 15px;
     }
+    .main_section_text {
+        justify-content: center;
+    }
     .header_menu {
         font-size: 0.75em;
         width: 60%;
     }
     .zone_text {
-        width: 85%;
+        width: 100%;
     }
     .zone_record_options {
         width: 85%;
     }
+    .main_section_info {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
     .info_zone {
-        margin: 60px 10px 10px 10px;
+        width: 90%;
+        margin: 20px 10px 10px 10px;
     }
     footer {
         height: 130px;

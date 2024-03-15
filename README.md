@@ -7,3 +7,10 @@ SpeechTranscribe turns your spoken words into text instantly. Our speech recogni
 ## What is it for?
 
 Very useful in moments when it would be difficult to use a keyboard, or pencil and paper; SpeechTranscribe allows you to speed up and save your ideas when you practice your daily walk, while stuck in traffic.
+
+
+
+## To Do:
+* Add hamburger menu with: Home, About, Historic, Configuration, X (to close the menu).
+* Create a list to Historic.
+* Add a Logo.
