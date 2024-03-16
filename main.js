@@ -1,13 +1,30 @@
 const section_landpage = document.getElementById("section_landpage");
 const section_config = document.getElementById("section_config");
 const button_restart = document.getElementById("button_restart");
+const button_collapse_sidebar = document.getElementById("button_collapse_sidebar");
+const menu_siderbar = document.getElementById("menu_siderbar");
+const button_close_sidebar = document.getElementById("button_close_sidebar");
 
-const landpageDisplayStyle = window.getComputedStyle(section_landpage).display;
 const configDisplayStyle = window.getComputedStyle(section_config).display;
+const landpageDisplayStyle = window.getComputedStyle(section_landpage).display;
+const menuSiderbarDisplayStyle = window.getComputedStyle(menu_siderbar).display;
 
 // BUTTONS: start and pause
 const button_start = document.getElementById("button_start");
 const button_pause = document.getElementById("button_pause");
+
+
+// COLLAPSE MENU and CLOSE
+button_collapse_sidebar.addEventListener("click", function() {
+    if (menu_siderbar.style.display == "" || menu_siderbar.style.display == "none") {
+        menu_siderbar.style.display = "flex";
+    }
+});
+button_close_sidebar.addEventListener("click", function() {
+    if (menu_siderbar.style.display === "flex") {
+        menu_siderbar.style.display = "none";
+    }
+});
 
 
 // CHANGE DISPLAY: click configuration -> hide main page, show configs

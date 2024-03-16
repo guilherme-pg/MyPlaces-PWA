@@ -15,7 +15,7 @@ body {
     flex-direction: column;
 }
 section {
-    padding: 60px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 
@@ -54,13 +54,18 @@ a:visited {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
+    /* justify-content: space-around; */
+    flex-direction: column;
     background-color: black;
     color: whitesmoke;
     position: fixed;
     width: 100%;
     height: 50px;
+}
+.header_logo_menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .header_title {
     background-color: black;
@@ -71,12 +76,21 @@ header {
     width: 45%;
 }
 .header_menu {
-    background-color: #ff6347;
+    /* background-color: #ff6347; */
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100%;
     width: 45%;
+}
+.button_collapse_sidebar {
+    background-color: #000000;
+    color: whitesmoke;
+    font-size: 20px;
+    /* width: 100%; */
+    height: 100%;
+    border: none;
+    padding: 10px 15px;
 }
 .header_button {
     background-color: #000000;
@@ -93,6 +107,44 @@ header {
 .header_button:hover {
     background-color: rgb(44, 44, 44);
 }
+
+.menu_sidebar {
+    background-color: purple;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+
+    /* position: fixed;
+    top: 0; */
+    /* right: -50%; */
+    /* transition: right 0.5s ease; */
+    /* z-index: 1000; */
+}
+.button_close_sidebar {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 10%;
+}
+#button_close_sidebar {
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+.sdb_button {
+    background-color: mediumseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
 
 
 
@@ -271,12 +323,13 @@ footer p {
     .header_title {
         margin-left: 15px;
     }
-    .main_section_text {
-        justify-content: center;
-    }
     .header_menu {
+        justify-content: end;
         font-size: 0.75em;
         width: 60%;
+    }
+    .main_section_text {
+        justify-content: center;
     }
     .zone_text {
         width: 100%;
