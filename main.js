@@ -9,32 +9,40 @@ const configDisplayStyle = window.getComputedStyle(section_config).display;
 const landpageDisplayStyle = window.getComputedStyle(section_landpage).display;
 const menuSiderbarDisplayStyle = window.getComputedStyle(menu_siderbar).display;
 
+
+
 // BUTTONS: start and pause
 const button_start = document.getElementById("button_start");
 const button_pause = document.getElementById("button_pause");
+
 
 
 // COLLAPSE MENU and CLOSE
 button_collapse_sidebar.addEventListener("click", function() {
     if (menu_siderbar.style.display == "" || menu_siderbar.style.display == "none") {
         menu_siderbar.style.display = "flex";
-    }
-});
-button_close_sidebar.addEventListener("click", function() {
-    if (menu_siderbar.style.display === "flex") {
+
+    } else {
         menu_siderbar.style.display = "none";
     }
 });
 
 
-// CHANGE DISPLAY: click configuration -> hide main page, show configs
-document.getElementById("button_config").addEventListener("click", function() {
 
+// CHANGE DISPLAY: click configuration -> hide main page, show configs (under maintenance)
+function displayHideConfig() {
     if (landpageDisplayStyle === "flex") {
         section_landpage.style.display = "none";
         section_config.style.display = "flex";
     }
-});
+}
+
+document.getElementById("button_hm_hist").addEventListener("click", displayHideConfig);
+document.getElementById("button_bm_hist").addEventListener("click", displayHideConfig);
+document.getElementById("button_hm_config").addEventListener("click", displayHideConfig);
+document.getElementById("button_bm_config").addEventListener("click", displayHideConfig);
+
+
 
 // CHANGE DISPLAY: click site title -> hide configs, show main page
 document.getElementById("site_title").addEventListener("click", function() {
@@ -44,6 +52,14 @@ document.getElementById("site_title").addEventListener("click", function() {
         section_config.style.display = "none";
     }
 });
+document.getElementById("button_home").addEventListener("click", function() {
+
+    if (section_landpage.style.display == "none") {
+        section_landpage.style.display = "flex";
+        section_config.style.display = "none";
+    }
+});
+
 
 
 // OPTION RESTART: pop-up
@@ -56,6 +72,7 @@ button_restart.addEventListener("click", function() {
     button_start.style.backgroundColor = "#000000";
     button_pause.style.backgroundColor = "#000000";
 });
+
 
 
 // BUTTONS: start and pause -> change colors
