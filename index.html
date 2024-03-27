@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turns your spoken words into text.">
+
+    <link rel="manifest" href="manifest.json">
 
     <link rel="stylesheet" type="text/css" href="standard.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -107,7 +110,22 @@
     </footer>
 
 
-
     <script src="main.js"></script>
+    <script>
+        let newWorker;
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js').then(reg => {
+            reg.addEventListener('updatefound', () => {
+            newWorker = reg.installing;
+            });
+        });
+        let refreshing;
+        navigator.serviceWorker.addEventListener('controllerchange', function () {
+            if (refreshing) return;
+            window.location.reload();
+            refreshing = true;
+        });
+        }
+    </script>
 </body>
 </html>

@@ -11,6 +11,6 @@ Very useful in moments when it would be difficult to use a keyboard, or pencil a
 
 
 ## To Do:
-* Add hamburger menu with: Home, About, Historic, Configuration, X (to close the menu).
-* Create a list to Historic.
-* Add a Logo.
+* create a icon;
+* PWA;
+* adjust the manifest
