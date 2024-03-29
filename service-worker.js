@@ -9,31 +9,18 @@ self.addEventListener('install', event => {
       .then(cache => cache.addAll([
 
         './index.html',
-
-        './assets/css/bootstrap.min.css',
-
-        './assets/js/bootstrap.min.js',
-
-        './assets/js/jquery.min.js',
-
-        './assets/js/popper.min.js',
-
-        './assets/img/background.png',
-        './assets/img/favicon.png',
-        './assets/img/logo.png',
-        './assets/img/icon_128.png',
-        './assets/img/icon_144.png',
-        './assets/img/icon_152.png',
-        './assets/img/icon_167.png',
-        './assets/img/icon_180.png',
-        './assets/img/icon_192.png',
-        './assets/img/icon_256.png',
-        './assets/img/icon_512.png',
-        './assets/img/formulas.JPG',
-
-        './assets/img/batman.jpeg',
-        './assets/img/chefao.jpeg',
-        './assets/img/leao.jpeg',
+        
+        '.images/icons/background.png',
+        '.images/icons/favicon.png',
+        '.images/icons/logo.png',
+        '.images/icons/16.png',
+        '.images/icons/32.png',
+        '.images/icons/40.png',
+        '.images/icons/50.png',
+        '.images/icons/60.png',
+        '.images/icons/80.png',
+        '.images/icons/180.png',
+        '.images/icons/1024.png',
       ]))
   );
 });

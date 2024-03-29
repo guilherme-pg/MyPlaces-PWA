@@ -3,44 +3,44 @@
   "short_name": "ST",
   "icons": [
     {
-      "src": "assets/img/icon_128.png",
-      "sizes": "128x128",
+      "src": "images/icons/16.png",
+      "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "assets/img/icon_144.png",
-      "sizes": "144x144",
+      "src": "images/icons/32.png",
+      "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "assets/img/icon_152.png",
-      "sizes": "152x152",
+      "src": "images/icons/40.png",
+      "sizes": "40x40",
       "type": "image/png"
     },
     {
-      "src": "assets/img/icon_167.png",
-      "sizes": "167x167",
+      "src": "images/icons/50.png",
+      "sizes": "50x50",
       "type": "image/png"
     },
     {
-      "src": "assets/img/icon_180.png",
+      "src": "images/icons/180.png",
       "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "assets/img/icon_192.png",
-      "sizes": "192x192",
+      "src": "images/icons/60.png",
+      "sizes": "60x60",
       "type": "image/png",
 	  "purpose": "any maskable"
     },
     {
-      "src": "assets/img/icon_256.png",
-      "sizes": "256x256",
+      "src": "images/icons/80.png",
+      "sizes": "80x80",
       "type": "image/png"
     },
     {
-      "src": "assets/img/icon_512.png",
-      "sizes": "512x512",
+      "src": "images/icons/1024.png",
+      "sizes": "1024x1024",
       "type": "image/png"
     }
   ],
