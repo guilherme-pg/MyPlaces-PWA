@@ -9,6 +9,17 @@ self.addEventListener('install', event => {
       .then(cache => cache.addAll([
 
         './index.html',
+        './html/about.html',
+        './html/listplaces.html',
+        './html/registerplace.html',
+        
+        '/styles/standard.css',
+        '/styles/about.css',
+        '/styles/listplaces.css',
+        '/styles/registerplace.css',
+
+        '/scripts/listplaces.js',
+        '/scripts/map.js',
         
         '.images/icons/background.png',
         '.images/icons/favicon.png',

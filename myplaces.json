@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "O Pátio Café & Cozinha",
+        "type": "Cafeteira & Restaurante",
+        "descrição": "Cafeteria e Restaurante com ambiente aberto e fechado.",
+        "open_space": "open",
+        "bairro": "Graças",
+        "latitude": -8.050795776081596,
+        "longitude": -34.89782472039363
+    },
+    {
+        "id": 2,
+        "name": "Acarajé da Tia Joana",
+        "type": "Lanchonete",
+        "descrição": "Acarajá ao lado do posto.",
+        "open_space": "open",
+        "bairro": "Torre",
+        "latitude": -8.049462900236684,
+        "longitude": -34.90633862167346
+    },
+    {
+        "id": 3,
+        "name": "Simone Barros",
+        "type": "Doceria",
+        "descrição": "Doceria",
+        "open_space": "closed",
+        "bairro": "Boa Viagem",
+        "latitude": -8.102134037673894,
+        "longitude": -34.88908048111179
+    },
+    {
+        "id": 4,
+        "name": "Terraço Capibaribe",
+        "type": "Restaurante",
+        "descrição": "Restaurante",
+        "open_space": "open",
+        "bairro": "Poço da Panela",
+        "latitude": -8.035884523754959,
+        "longitude": -34.92581252923245
+    },
+    {
+        "id": 5,
+        "name": "Teatro Mamulengo",
+        "type": "Restaurante & Bar",
+        "descrição": "Restaurante & Bar",
+        "open_space": "both",
+        "bairro": "Recife Antigo",
+        "latitude": -8.06101856179454, 
+        "longitude": -34.871646549368776
+    }
+]

@@ -7,48 +7,69 @@
     <meta name="theme-color" content="#f5f5f5" />
 
 
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" type="text/css" href="styles/standard.css" />
-    <link rel="stylesheet" type="text/css" href="styles/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/standard.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/registerplace.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
-    <title>MyPlaces</title>
+    <title>Register Place</title>
 </head>
 <body>
+
     <header>
         <div class="header_logo_menu">
             <div class="header_title">
-                <a href="index.html" id="site_title">MyPlaces</a>
+                <a href="../index.html" id="site_title">MyPlaces</a>
             </div>
             
             <div class="header_menu">
     
                 <button class="button_collapse_sidebar" id="button_collapse_sidebar">☰</button>
     
-                <a class="header_button" href="html/about.html">About</a>
-                <a class="header_button" href="html/listplaces.html">Favorites Places</a>
-                <a class="header_button" href="html/registerplace.html">Register New Place</a>
+                <a class="header_button" href="about.html">About</a>
+                <a class="header_button" href="listplaces.html">Favorites Places</a>
+                <a class="header_button" href="registerplace.html">Register New Place</a>
             </div>
         </div>
 
         <div class="menu_sidebar" id="menu_siderbar">
-            <a class="button_menu" href="html/about.html">About</a>
-            <a class="button_menu" href="html/listplaces.html">Favorites Places</a>
-            <a class="button_menu" href="html/registerplace.html">Register New Place</a>
+            <a class="button_menu" id="button_home" href="../index.html">Home</a>
+            <a class="button_menu" href="about.html">About</a>
+            <a class="button_menu" href="listplaces.html">Favorites Places</a>
+            <a class="button_menu" href="registerplace.html">Register New Place</a>
         </div>
         
     </header>
 
-    
 
     <main>
-        <div class="map_zone" id="map">
-            
-        </div>
+        
+        <form id="place_register_form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="type">Type</label>
+            <input id="type" name="type" type="text" required>
+
+            <label for="description">Descriptrion</label>
+            <textarea id="description" name="description" rows="3" required></textarea>
+
+            <label for="open_space">Environment Type</label>
+            <select name="open_space" id="open_space">
+                <option value="open">Open</option>
+                <option value="closed">Closed</option>
+                <option value="both">Both</option>
+            </select>
+
+            <label for="latitude">Latitude</label>
+            <input id="latitude" name="latitude" type="number" required>
+
+            <label for="longitude">Longitude</label>
+            <input id="longitude" name="longitude" type="number" required>
+
+            <button type="button">Register Place</button>
+        </form>
 
     </main>
-
 
 
     <footer>
@@ -67,26 +88,7 @@
             <p>All rights reserved TM ©</p>
         </div>
     </footer>
-
-
-    <script src="scripts/standard.js"></script>
-    <script src="scripts/map.js"></script>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        let newWorker;
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./service-worker.js').then(reg => {
-            reg.addEventListener('updatefound', () => {
-            newWorker = reg.installing;
-            });
-        });
-        let refreshing;
-        navigator.serviceWorker.addEventListener('controllerchange', function () {
-            if (refreshing) return;
-            window.location.reload();
-            refreshing = true;
-        });
-        }
-    </script>
+    
+    <script src="../scripts/standard.js"></script>
 </body>
 </html>

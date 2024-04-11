@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 70px;
+}
+
+.map_zone {
+    width: 100%;
+    height: 70vh;
+}
