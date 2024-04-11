@@ -12,14 +12,19 @@ self.addEventListener('install', event => {
         './html/about.html',
         './html/listplaces.html',
         './html/registerplace.html',
+
+        './myplaces.json',
         
         '/styles/standard.css',
+        '/styles/index.css',
         '/styles/about.css',
         '/styles/listplaces.css',
         '/styles/registerplace.css',
 
         '/scripts/listplaces.js',
         '/scripts/map.js',
+        '/scripts/standard.js',
+        '/scripts/registerplace.js',
         
         '.images/icons/background.png',
         '.images/icons/favicon.png',
@@ -53,7 +58,7 @@ self.addEventListener('fetch', function (event) {
   }());
 
   //Atualizacao cache
-  /*event.respondWith(
+  event.respondWith(
     caches.match(event.request)
       .then(function (response) {
         if (response) {
@@ -61,6 +66,6 @@ self.addEventListener('fetch', function (event) {
         }
         return fetch(event.request);
       })
-  );*/
+  );
 
 });

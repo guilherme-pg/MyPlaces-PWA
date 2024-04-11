@@ -1,6 +1,4 @@
 
-
-
 // MAP CODE
 window.onload = function() {
     var map = L.map('map');
@@ -14,7 +12,7 @@ window.onload = function() {
 
     // marcador para a localização do usuário
     function onLocationFound(e) {
-        var radius = e.accuracy / 2;
+        // var radius = e.accuracy / 2;
 
         L.marker(e.latlng, {
             icon: greenIcon
@@ -45,7 +43,4 @@ window.onload = function() {
             });
         })
         .catch(error => console.error('Erro ao caregar os pontos de interesse: ', error));
-
 }
-
-

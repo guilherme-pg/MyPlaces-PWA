@@ -4,38 +4,9 @@
 
 <!-- i need coffee! Onde achar uma cafeteria -->
 
-SpeechTranscribe turns your spoken words into text instantly. Our speech recognition technology operates in real time, meaning that as you speak, the app processes and displays the corresponding text in near real time.
+The application is a tool designed to help users register, access, and locate their favorite locations on a map. It serves as a convenient platform for users to store and organize places that hold significance or interest to them.
 
 ## What is it for?
 
-Very useful in moments when it would be difficult to use a keyboard, or pencil and paper; SpeechTranscribe allows you to speed up and save your ideas when you practice your daily walk, while stuck in traffic.
+MyPlaces serves the purpose of providing users with a seamless way to keep track of their favorite locations. Whether it's a beloved coffee shop, a scenic viewpoint, or a hidden gem, users can easily register these places within the application. Additionally, the application allows users to access and view these locations on a map, providing a visual representation of their favorite spots for easy navigation and exploration.
 
-<!-- STRIKES
-coonsumir API (dados) ou JSON
-dispositívos de Hardware
- -->
-
- <!-- estrutura de folders
- f. estrutura
- f. assets
- f. maps
- f. form
- f. lists
- index na raiz
-  -->
-
-  <!-- 
-  tentar usar nav -> ul -> il -->
-
-<!-- maps
-qual a estrutura do json com os dados?
-biblioteca: leaflet
- -->
-
-## To Do:
-* alterar projeto para buscar cafeterias.
-* adicionar mapa na zona central.
-* alterar a descrição e cor do projeto.
-* cadastrar cafeteria.
-* listar cafeterias.
-* procurar cafeteria.
