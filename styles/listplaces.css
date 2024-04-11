@@ -3,5 +3,16 @@ main {
     align-items: start;
     justify-content: center;
     min-height: 100vh;
-    margin-top: 70px;
+    width: 90%;
+    margin-top: 50px;
+}
+.list_content {
+    width: 100%;
+}
+ul {
+    width: 100%;
+    list-style-type: none;
+}
+li {
+    background-color: #77B0AA;
 }

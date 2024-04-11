@@ -3,10 +3,10 @@ main {
     align-items: start;
     justify-content: center;
     min-height: 100vh;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .map_zone {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
 }
