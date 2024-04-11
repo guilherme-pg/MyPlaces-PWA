@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 function load_places() {
-    fetch("favoriteplces")
+    fetch("../myplaces.json")
         .then(response => response.json())
         .then(data => {
             const list_places = document.getElementById("list_places")
@@ -16,6 +16,7 @@ function load_places() {
                 const geolink = `<a href="geo:${item.latitude}, ${item.longitude}">Check in the Map</a>`;
                 li.innerHTML = `
                     <h3>${item.name}</h3>
+                    <p>Tipo: ${item.type}</p>
                     <p>Bairro: ${item.bairro}</p>
                     <p>Open Space: ${item.open_space}</p>
                     <p>Description: ${item.description}</p>

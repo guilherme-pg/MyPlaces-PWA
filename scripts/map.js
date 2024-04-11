@@ -41,7 +41,7 @@ window.onload = function() {
         .then(data => {
             data.forEach(function (point) {
                 L.marker([point.latitude, point.longitude]).addTo(map)
-                    .bindPopup(point.title);
+                    .bindPopup(point.name);
             });
         })
         .catch(error => console.error('Erro ao caregar os pontos de interesse: ', error));
