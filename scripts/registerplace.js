@@ -1,5 +1,7 @@
 
+
 var jsonData;
+
 fetch('../myplaces.json')
   .then(response => response.json()) // Parse the JSON response
   .then(data => {
@@ -8,9 +10,10 @@ fetch('../myplaces.json')
   })
   .catch(error => console.error('Error loading JSON data:', error));
 
+// var jsonData2 = JSON.parse(readFileSync("../myplaces.json")); 
+// console.log("jsonData222222 ::::::::::::::: ", jsonData2)
 
 function registerFormData() {
-
     // Get form values
     var name = document.getElementById("name").value;
     var type = document.getElementById("type").value;
@@ -19,8 +22,11 @@ function registerFormData() {
     var latitude = document.getElementById("latitude").value;
     var longitude = document.getElementById("longitude").value;
 
-    var jsonObject = JSON.parse(jsonData);
-    var numberOfObjects = jsonObject.places.length;
+    // console.log("jsonData ::::::::::::::: ", jsonData)
+
+    var numberOfObjects = jsonData.length;
+
+    // console.log("numberOfObjects ::::::::::::::: ", numberOfObjects)
 
     // Create JSON object
     var placeData = {
@@ -34,25 +40,29 @@ function registerFormData() {
     };
 
     // Push the new place object into the array of places
-    jsonData.places.push(placeData);
+    jsonData.push(placeData);
 
     // Convert the modified JavaScript object back into a JSON string
-    var updatedJsonData = JSON.stringify(jsonObject);
+    var updatedJsonData = JSON.stringify(jsonData);
 
     // Write the updated JSON string back to your local JSON file
-    fetch('../myplaces.json', {
-        method: 'PUT', // Use PUT method to update the file
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: updatedJsonData,
-    })
-    .then(response => {
-        if (response.ok) {
-            console.log('Place registered successfully!');
-        } else {
-            console.error('Failed to register place.');
-        }
-    })
-    .catch(error => console.error('Error updating JSON file:', error));
+    // localStorage.setItem('myplaces', JSON.stringify(updatedJsonData));
+
+    // console.log("jsonData UPDATED ::::::::::::::: ", jsonData)
+
+    // fetch('../myplaces.json', {
+    //     method: 'POST', // Use POST method to update the file
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     },
+    //     body: updatedJsonData,
+    // })
+    // .then(response => {
+    //     if (response.ok) {
+    //         console.log('Place registered successfully!');
+    //     } else {
+    //         console.error('Failed to register place.');
+    //     }
+    // })
+    // .catch(error => console.error('Error updating JSON file:', error));
 }

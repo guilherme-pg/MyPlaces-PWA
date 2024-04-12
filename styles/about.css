@@ -4,6 +4,7 @@ main {
     justify-content: center;
     min-height: 100vh;
     margin-top: 70px;
+    margin-bottom: 120px;
 }
 .info_zone {
     display: flex;

@@ -177,7 +177,7 @@ footer {
     width: 100%;
 }
 .footer_button {
-    margin: 30px 30px 0 30px;
+    margin: 20px 30px 0 30px;
 }
 .footer_links svg {
     fill: #F0F8FF;
@@ -267,9 +267,6 @@ footer p {
     .info_zone {
         margin: 60px 10px 10px 10px;
     }
-    footer {
-        height: 130px;
-    }
 }
 
 
@@ -310,8 +307,5 @@ footer p {
     .info_zone {
         width: 90%;
         margin: 20px 10px 10px 10px;
-    }
-    footer {
-        height: 130px;
     }
 }
