@@ -40,10 +40,10 @@ function registerFormData() {
     };
 
     // Push the new place object into the array of places
-    jsonData.push(placeData);
+    // jsonData.push(placeData);
 
     // Convert the modified JavaScript object back into a JSON string
-    var updatedJsonData = JSON.stringify(jsonData);
+    // var updatedJsonData = JSON.stringify(jsonData);
 
     // Write the updated JSON string back to your local JSON file
     // localStorage.setItem('myplaces', JSON.stringify(updatedJsonData));
