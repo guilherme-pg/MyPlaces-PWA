@@ -25,7 +25,7 @@ body {
 /* GENERAL BUTTONS */
 .button {
     background-color: #003C43;
-    color: whitesmoke;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,10 +39,10 @@ body {
     background-color: #135D66;
 }
 a:link {
-    color: whitesmoke;
+    color: #ffffff;
 }
 a:visited {
-    color: whitesmoke;
+    color: #ffffff;
 }
 
 
@@ -53,7 +53,7 @@ a:visited {
 /* HEADER */
 header {
     background-color: #003C43;
-    color: whitesmoke;
+    color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -87,7 +87,7 @@ header {
 }
 .button_collapse_sidebar {
     background-color: #003C43;
-    color: whitesmoke;
+    color: #ffffff;
     display: none;
     cursor: pointer;
     font-size: 20px;
@@ -97,7 +97,7 @@ header {
 }
 .header_button {
     background-color: #003C43;
-    color: whitesmoke;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +124,7 @@ header {
 }
 .button_menu {
     background-color: #135D66;
-    color: whitesmoke;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +180,7 @@ footer {
     margin: 20px 30px 0 30px;
 }
 .footer_links svg {
-    fill: #F0F8FF;
+    fill: #ffffff;
     height: 40px;
     transition: text-shadow 1s;
 }
@@ -189,12 +189,12 @@ footer {
     filter: drop-shadow(0 0 1px #FAFAD2);
 }
 footer p {
-    color: #F0F8FF;
+    color: #ffffff;
     font-size: 12px;
     margin: 0 0 10px 20px;
 }
 .icon_link {
-    color: white;
+    color: #ffffff;
     width: 40px;
     height: 40px;
 }

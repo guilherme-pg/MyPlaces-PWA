@@ -17,7 +17,7 @@ window.onload = function() {
         L.marker(e.latlng, {
             icon: greenIcon
         }).addTo(map)
-            .bindPopup("Você está aqui.").openPopup();
+            .bindPopup("You are here.").openPopup();
     }
 
     map.on('locationfound', onLocationFound);
